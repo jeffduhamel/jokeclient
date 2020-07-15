@@ -1,0 +1,8 @@
+<h2>Random Joke of the Day</h2>
+
+<div *ngFor="let j of jokes; let i=index;">
+    <h4>{{j.setup}}</h4>
+    <button (click)="togglePunchline()">{{toggleDisplayName}}</button>
+    <button (click)="getRandomJoke()">Get Another</button>
+    <h4 id="punchline_{{i}}" [hidden] = "hideIt">{{j.punchLine}}</h4>
+</div>
