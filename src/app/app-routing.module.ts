@@ -10,8 +10,8 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: '/joke-random',
-    pathMatch: 'full'
+    component: JokeRandomComponent,
+    data: {title: 'Random Joke'}
   }
 ];
 
